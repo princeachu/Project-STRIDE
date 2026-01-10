@@ -1,0 +1,32 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from '../../components/header/header.component';
+import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-placeholder',
+  standalone: true,
+  imports: [CommonModule, HeaderComponent, RouterLink],
+  template: `
+    <app-header></app-header>
+
+    <div style="min-height: 100vh; background: linear-gradient(135deg, var(--color-blue-50) 0%, white 50%, var(--color-blue-50) 100%); display: flex; align-items: center; justify-content: center; padding: 1rem;">
+      <div style="max-width: 28rem; text-align: center;">
+        <div style="margin-bottom: 1.5rem;">
+          <svg style="width: 6rem; height: 6rem; margin: 0 auto; color: var(--color-gray-400);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h2 style="font-size: 1.875rem; font-weight: 700; color: var(--color-gray-900); margin-bottom: 1rem;">Coming Soon</h2>
+        <p style="color: var(--color-gray-600); margin-bottom: 2rem;">
+          This page is being built! Let us know what you'd like to see here by providing feedback.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <a routerLink="/dashboard" class="btn btn-primary" style="display: inline-block; text-decoration: none;">Back to Dashboard</a>
+          <a routerLink="/" class="btn btn-secondary" style="display: inline-block; text-decoration: none;">Home Page</a>
+        </div>
+      </div>
+    </div>
+  `,
+})
+export class PlaceholderComponent {}
