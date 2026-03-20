@@ -6,52 +6,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
-  template: `
-    <header>
-      <div class="container">
-        <!-- Logo -->
-        <a routerLink="/" class="logo">
-          <div class="logo-icon">
-            <svg style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm3.5-9c.83 0 1.5-.67 1.5-1.5S14.33 4 13.5 4 12 4.67 12 5.5s.67 1.5 1.5 1.5z"/>
-            </svg>
-          </div>
-          <span class="logo-text">CivicHub</span>
-        </a>
-
-        <!-- Navigation -->
-        <nav>
-          <a routerLink="/dashboard" routerLinkActive="active" 
-             [routerLinkActiveOptions]="{ exact: false }">
-            Dashboard
-          </a>
-          <a routerLink="/representatives" routerLinkActive="active"
-             [routerLinkActiveOptions]="{ exact: false }">
-            Representatives
-          </a>
-          <a routerLink="/nonprofits" routerLinkActive="active"
-             [routerLinkActiveOptions]="{ exact: false }">
-            Organizations
-          </a>
-          <a routerLink="/my-actions" routerLinkActive="active"
-             [routerLinkActiveOptions]="{ exact: false }">
-            My Actions
-          </a>
-        </nav>
-
-        <!-- Auth Button -->
-        <div class="flex" style="gap: 1rem; align-items: center;">
-          <button class="hidden-md" style="padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500; color: var(--color-blue-600); background: transparent; border: none; cursor: pointer; border-radius: 0.5rem; transition: background-color 200ms ease;"
-                  onmouseover="this.style.backgroundColor='var(--color-blue-50)'"
-                  onmouseout="this.style.backgroundColor='transparent'">
-            Sign In
-          </button>
-          <button class="btn btn-primary btn-small" style="box-shadow: none;">
-            Get Started
-          </button>
-        </div>
-      </div>
-    </header>
-  `,
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {}

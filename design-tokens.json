@@ -1,0 +1,92 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "project": "Civic Engagement Mobile App",
+    "accessibility": "WCAG 2.2 AA",
+    "platform": "Mobile-first Web / PWA"
+  },
+
+  "color": {
+    "background": {
+      "primary": { "value": "#FFFFFF" },
+      "secondary": { "value": "#F8FAFC" }
+    },
+    "text": {
+      "primary": { "value": "#1A1A1A" },
+      "secondary": { "value": "#4A4A4A" },
+      "meta": { "value": "#6B7280" }
+    },
+    "action": {
+      "primary": { "value": "#1F6AE1" },
+      "secondary": { "value": "#E5E7EB" },
+      "danger": { "value": "#B42318" }
+    },
+    "focus": {
+      "outline": { "value": "#1F6AE1" }
+    },
+    "status": {
+      "success": { "value": "#1E7F4F" },
+      "warning": { "value": "#B54708" },
+      "error": { "value": "#B42318" }
+    }
+  },
+
+  "font": {
+    "family": {
+      "base": { "value": "Inter, system-ui, -apple-system, sans-serif" }
+    },
+    "size": {
+      "meta": { "value": "14px" },
+      "body": { "value": "16px" },
+      "h2": { "value": "20px" },
+      "h1": { "value": "24px" }
+    },
+    "weight": {
+      "regular": { "value": 400 },
+      "semibold": { "value": 600 }
+    },
+    "lineHeight": {
+      "base": { "value": 1.6 }
+    }
+  },
+
+  "space": {
+    "xs": { "value": "4px" },
+    "sm": { "value": "8px" },
+    "md": { "value": "16px" },
+    "lg": { "value": "24px" },
+    "xl": { "value": "32px" }
+  },
+
+  "size": {
+    "tapTarget": { "value": "44px" },
+    "buttonHeight": { "value": "44px" },
+    "cardRadius": { "value": "12px" },
+    "inputRadius": { "value": "8px" }
+  },
+
+  "layout": {
+    "mobile": {
+      "baseWidth": { "value": "375px" },
+      "columns": { "value": 4 },
+      "margin": { "value": "16px" },
+      "gutter": { "value": "16px" }
+    }
+  },
+
+  "focus": {
+    "outlineWidth": { "value": "2px" },
+    "outlineStyle": { "value": "solid" }
+  },
+
+  "motion": {
+    "duration": {
+      "fast": { "value": "120ms" },
+      "normal": { "value": "200ms" }
+    },
+    "easing": {
+      "standard": { "value": "ease-out" }
+    },
+    "reducedMotion": { "value": true }
+  }
+}
